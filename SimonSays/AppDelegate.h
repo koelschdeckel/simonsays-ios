@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class DKLCommunicator;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (readonly, strong) DKLCommunicator* dklCommunicator;
 
 
 @end

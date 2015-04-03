@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "DKLCommunicator.h"
 
 @interface AppDelegate ()
+
+@property (readwrite, strong) DKLCommunicator* dklCommunicator;
 
 @end
 
@@ -17,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    self.dklCommunicator = [[DKLCommunicator alloc] init];
     return YES;
 }
 
